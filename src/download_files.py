@@ -17,10 +17,6 @@ def download_files(url, local_address):
         print("Download finalizado")
     else:
         response.raise_for_status()
-
-def compact_files(dir_name):
-    dir_name = os.path.join(dir_name)
-    make_archive('arquivos_compactados_{}'.format(date.today()), 'zip', dir_name)
    
 if __name__ == '__main__':
     # Variavel que armazena o nome da pasta que será feito o download
